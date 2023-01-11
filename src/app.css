@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 
+  https://svelte.dev/repl/ed4fef4beceb4b0eb295d1f9fdf3bd62?version=3.6.9 
+  https://heropatterns.com/
+  https://htmlcolorcodes.com/colors/shades-of-black/
+  */
+
+/* body.dark-mode {
+	background-color: #171717;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='5' height='5' viewBox='0 0 4 4'%3E%3Cpath fill='%235c5c5c' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+	background-color: #171717;
+	color: white;
+} */
+
+/* body {
+	@apply text-2xl;
+	background-color: #ffffff;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='5' height='5' viewBox='0 0 4 4'%3E%3Cpath fill='%23a3a3a3' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+	color: black;
+} */
+
+:root {
+	--highlight: #709775;
+	--highlight-light: #acc3af;
+}
+
+html {
+	@apply antialiased;
+	scroll-behavior: smooth;
+}
+
+body {
+	/* text-zinc-200 bg-[#121713] */
+	@apply text-2xl text-[#F3F6F4] font-light;
+	/* #18181b -> #26262b */
+	background: rgb(24, 24, 27);
+	background: linear-gradient(110deg, rgba(24, 24, 27, 1) 0%, rgba(38, 38, 43, 1) 100%);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	@apply my-4 font-bold;
+}
+
+strong {
+	@apply font-bold;
+}
+
+p {
+	@apply my-4;
+}
+
+a {
+	@apply text-[var(--highlight-light)] transition-all duration-500 font-bold;
+
+	&:hover {
+		@apply text-[var(--highlight)];
+	}
+}
+
+._container {
+	@apply mx-auto px-6 max-w-[1200px];
+
+	@screen sm {
+		@apply px-12;
+	}
+
+	@screen md {
+		@apply px-[100px];
+	}
+}
+
+.section-title {
+	@apply text-[var(--highlight)] text-3xl;
+}
+
+.sub-section {
+	margin-top: 2rem;
+}
