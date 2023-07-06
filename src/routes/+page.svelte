@@ -38,9 +38,11 @@
 	</p>
 
 	<p>
-		I'm currently working at <strong>iwn studio</strong> here in Montreal, where I'm helping to
-		build innovative applications for businesses. Before that I was a Front End Developer for the
-		marketing agency <strong>KRFTWRK</strong>. Check out my full career path so far on
+		I'm currently working at <a href="https://iwn.studio/" target="_blank" rel="noreferrer"
+			>iwn studio</a
+		>
+		here in Montreal, where I'm helping to build innovative applications for businesses. Check out
+		my full career path so far on
 		<a href="https://www.linkedin.com/in/benunyolo/" target="_blank" rel="noreferrer">LinkedIn</a>.
 	</p>
 

@@ -82,5 +82,5 @@ a {
 }
 
 .sub-section {
-	margin-top: 2rem;
+	@apply mt-8;
 }

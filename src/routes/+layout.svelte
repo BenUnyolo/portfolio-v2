@@ -28,7 +28,6 @@
 
 <div class="_container">
 	<!-- sidebar links -->
-	<!-- fixed bottom-0 flex flex-col text-8xl  space-y-4 my-6 sm:-translate-x-[calc(50px+50%)]-->
 	<div class="relative">
 		<div class="absolute translate-y-[calc(100vh-100%)] md:-translate-x-[calc(50px+50%)] md:fixed">
 			<div class="flex flex-col py-6 space-y-4">
@@ -42,9 +41,8 @@
 	</div>
 
 	<!-- scroll arrow -->
-	<div class="relative md:static">
-		<div class="absolute right-0 translate-y-[calc(100vh-100%)] md:-translate-x-[calc(-50%+50px)]">
-			<!-- <div class="absolute right-0 translate-y-[calc(100vh-100%)] md:-translate-x-[calc(-50%+50px)]"> -->
+	<div class="relative">
+		<div class="absolute right-0 translate-y-[calc(100vh-100%)] md:translate-x-[calc(100%+50px)]">
 			<a
 				class={`flex flex-col justify-end mb-6 h-[calc(32px+8px)] ${
 					arrowHidden ? 'invisible opacity-0' : 'visible opacity-100'
